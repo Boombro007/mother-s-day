@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Mother's Day ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+header {
+    padding: 40px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 25px red; }
+}
+
+.section {
+    padding: 40px;
+}
+
+img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+    color: darkred;
+}
+
+.heart {
+    font-size: 30px;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.3);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    Happy Mother's Day ❤️
+</header>
+
+<div class="section">
+    <h2>Dear Mom 💖</h2>
+    <p>
+        Thank you for your endless love, care, and support.<br>
+        You are my strongest support system and my biggest inspiration.<br>  
+        I love you more than words can express ❤️<br>
+    </p>
+</div>
+
+<div class="section">
+    <h2>Our Beautiful Memories 📸</h2>
+    <img src="mummy.HEIC" width="200">
+    <img src="mummy2.jpg.HEIC" width="200">
+    <img src="dhirumummy.HEIC" width="200">
+</div>
+
+<div class="section">
+    <h2>Why I Love You ❤️</h2>
+    <ul style="list-style: none; font-size:18px;">
+        <li>💖 You always support me</li>
+        <li>💖 You care for me endlessly</li>
+        <li>💖 You are my inspiration</li>
+        <li>💖 You make my life beautiful</li>
+    </ul>
+</div>
+
+<div class="section">
+    <button onclick="showSurprise()">Click for a Surprise 🎁</button>
+    <p id="message"></p>
+</div>
+
+<div class="section">
+    <span class="heart">❤️ ❤️ ❤️</span>
+</div>
+
+<footer>
+    Made with ❤️ by Your Child
+</footer>
+
+<script>
+function showSurprise() {
+    document.getElementById("message").innerHTML =
+    "You are the best mom in the entire world ❤️ I am so lucky to have you!";
+}
+</script>
+
+</body>
+</html>
